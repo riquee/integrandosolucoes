@@ -5,6 +5,16 @@ const getAll = async () => {
   return clientes;
 };
 
+const create = async (client) => {
+  await connection.execute(
+    `
+  INSERT INTO clientes(cnpj, nome_fantasia, razao_social, cep, endereco, numero, bairro, cidade, uf) VALUES
+  (?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `,
+    [...client],
+  );
+};
+
 module.exports = {
   getAll,
-}
+};
