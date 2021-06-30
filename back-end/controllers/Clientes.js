@@ -8,15 +8,16 @@ clientes.get(
   '/',
   rescue(async (req, res) => {
     const allClients = await Clientes.getAll();
-    res.status(200).json({ allClients });
+    res.status(200).json({ clientes:  allClients });
   }),
 );
 
 clientes.post(
   '/',
   validateMiddle,
-  rescue(async (req, res, next) => {
-    res.status(200).json({ client: req.body });
+  rescue(async (req, res) => {
+    const cliente = await Clientes.create(req.body);
+    res.status(200).json(cliente);
   }),
 );
 
