@@ -1,7 +1,7 @@
 const Clientes = require('../schema/Clientes');
 
 module.exports = (req, res, next) => {
-  const { Error } = Clientes.validate(req);
-  if (Error) next(Error);
+  const { error } = Clientes.validate(req.body);
+  if (error) next(error);
   next();
 };
