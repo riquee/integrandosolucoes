@@ -1,6 +1,6 @@
 const express = require('express');
 const rescue = require('express-rescue');
-const Clientes = require('../models/Clientes');
+const Clientes = require('../services/Clientes');
 const validateMiddle = require('../middlewares/validateClients');
 const clientes = express.Router();
 

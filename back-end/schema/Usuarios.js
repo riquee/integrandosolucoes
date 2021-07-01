@@ -1,7 +1,7 @@
 const Joi = require('@hapi/joi');
 
 module.exports = Joi.object({
-  clientId: Joi.number().required(),
+  client_id: Joi.number().strict().required(),
   nome: Joi.string().required(),
   sobrenome: Joi.string().required(),
   telefone: Joi.string().required(),

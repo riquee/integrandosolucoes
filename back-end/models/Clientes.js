@@ -1,4 +1,3 @@
-const clientes = require('../controllers/Clientes');
 const connection = require('./connection');
 
 const findById = async (id) => {
