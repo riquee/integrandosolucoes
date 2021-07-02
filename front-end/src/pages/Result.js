@@ -1,6 +1,6 @@
 import React from "react";
 import { useStateMachine } from "little-state-machine";
-import { updateAction } from "./updateAction";
+import { updateAction } from "../actions/updateAction";
 
 const Result = (props) => {
   const { actions, state } = useStateMachine({updateAction});

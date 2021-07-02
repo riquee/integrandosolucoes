@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { withRouter } from 'react-router-dom';
 import { useStateMachine } from 'little-state-machine';
-import { updateAction } from './updateAction';
+import { updateAction } from '../actions/updateAction';
 import InputMask from 'react-input-mask';
 
 const Step1 = (props) => {

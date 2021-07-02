@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { withRouter } from 'react-router-dom';
 import { useStateMachine } from 'little-state-machine';
-import { updateAction2 } from './updateAction';
+import { updateAction2 } from '../actions/updateAction';
 import InputMask from 'react-input-mask';
 import axios from 'axios';
 
