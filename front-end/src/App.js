@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { StateMachineProvider, createStore } from "little-state-machine";
-import Step1 from "./Step1";
-import Step2 from "./Step2";
-import Result from "./Result";
-import Home from "./Home";
+import Step1 from "./pages/Step1";
+import Step2 from "./pages/Step2";
+import Result from "./pages/Result";
+import Home from "./pages/Home";
 
 import "./styles.css";
 
