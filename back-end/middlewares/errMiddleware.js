@@ -1,5 +1,5 @@
 module.exports = (err, req, res, next) => {
-  console.log('errrrrrrr', err)
+  console.log(err);
   if (err.isJoi) {
     return res.status(422).json({
       err: {

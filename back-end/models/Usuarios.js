@@ -12,6 +12,7 @@ const getAll = async () => {
 };
 
 const create = async (usuarios) => {
+  console.log('ssssssssss', usuarios)
   const [{ insertId: id }] = await connection.execute(
     `INSERT INTO usuarios(client_id, nome, sobrenome, telefone, email, senha) VALUES
     (?, ?, ?, ?, ?, ?)`,
